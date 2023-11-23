@@ -1,3 +1,7 @@
+*{
+  font-family: "Ubuntu",sans-serif;
+}
+
 .App {
   text-align: center;
 }
@@ -6,7 +10,32 @@
   height: 40vmin;
   pointer-events: none;
 }
-
+#coolButton{
+  -webkit-transition: filter 1s;
+}
+#coolButton:hover{
+  transition: 1s linear;
+  background-color: #FA6432;
+  filter: drop-shadow(0 0 10px #FA6432) drop-shadow(0 0 40px #FA6432)
+  contrast(1.8) brightness(1.8);
+}
+#coolButton2{
+  -webkit-transition: filter 1s;
+  transition: background-color 1s linear;
+}
+#coolButton2:hover{
+  transition: 1s;
+  color: #FFF0DC;
+  background-color: #B43C00;
+}
+@media (max-width: 768px) {
+  .logoBox {
+    display: none;
+  }
+  .welcomeContent{
+    margin-right: 0;
+  }
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
